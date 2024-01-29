@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit - To-Do List</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+        <a href="/" class="header-logo">LIST</a>
+      </header>
+      <div class="container">
+        <div class="container-header">
+          <h1>Edit Item</h1>
+        </div>
+        <div class="item-form-wrapper">
+          <p class="form-label">Kegiatan</p>
+          <form action="/update/<%= item.id %>" method="post">
+            <input type="text" name="todoName" value="<%= item.name %>">
+            <input type="submit" value="Perbarui">
+          </form>
+        </div>
+        <a href="/" class="cancel-button">Kembali</a>
+      </div>
+  </body>
+</html>
